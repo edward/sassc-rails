@@ -64,7 +64,6 @@ module SassC::Rails
     def config_options
       opts = { style: sass_style }
 
-
       if Rails.application.config.sass.inline_source_maps
         opts.merge!({
           source_map_file: ".",
